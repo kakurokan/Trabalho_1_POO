@@ -30,6 +30,17 @@ public class Vetor {
     }
 
     /**
+     * Constrói um vetor 2D no sistema de coordenadas cartesianas utilizando as
+     * coordenadas de um ponto fornecido. O vetor representado por estas
+     * componentes deve ter módulo maior que zero.
+     *
+     * @param p O ponto utilizado para definir as componentes x e y do vetor.
+     */
+    public Vetor(Ponto p) {
+        this(p.getX(), p.getY());
+    }
+
+    /**
      * Retorna a coordenada x do vetor no sistema de coordenadas cartesianas.
      *
      * @return o valor da coordenada x.
