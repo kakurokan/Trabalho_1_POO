@@ -94,7 +94,7 @@ public class SegmentoReta {
      *
      * @param p O ponto a ser verificado.
      * @return {@code true} se o ponto está dentro dos limites do segmento de reta, {@code false} caso contrário.
-     * @see <a href="https://www.geeksforgeeks.org/dsa/check-if-two-given-line-segments-intersect/">...</a>
+     * @see <a href="https://www.geeksforgeeks.org/dsa/check-if-two-given-line-segments-intersect/">Geeks for geeks</a>
      */
     private boolean noSegmento(Ponto p) {
         return p.getX() <= Math.max(this.a.getX(), this.b.getX())
@@ -111,13 +111,14 @@ public class SegmentoReta {
      * @param v O vetor que define o segmento de reta com o qual será verificada a interseção.
      * @return O ponto de interseção entre os dois segmentos de reta, ou {@code null}
      * caso não exista interseção ou os segmentos sejam paralelos (incluindo o caso colinear).
-     * @see <a href="https://stackoverflow.com/questions/563198/how-do-you-detect-where-two-line-segments-intersect">...</a>
+     * @see <a href="https://stackoverflow.com/questions/563198/how-do-you-detect-where-two-line-segments-intersect">Stack Overflow</a>,
+     * <a href="https://theswissbay.ch/pdf/Gentoomen%20Library/Game%20Development/Programming/Graphics%20Gems%201.pdf">Livro de referência</a>
      */
     Ponto intersect(Vetor v) {
         SegmentoReta seg = new SegmentoReta(new Ponto(0, 0), v);
 
         Ponto r = this.b.subtracao(this.a);
-        Ponto s = seg.b.subtracao(seg.a);
+        Ponto s = seg.b;
         Ponto k = seg.a.subtracao(this.a);
 
         double numerador = (k).produtoVetorial(r);

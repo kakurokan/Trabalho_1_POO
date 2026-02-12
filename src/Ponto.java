@@ -52,7 +52,7 @@ public class Ponto {
 
     /**
      * Compara o objeto atual com outro objeto especificado para verificar a igualdade.
-     * Dois objetos da classe Ponto são considerados iguais se suas coordenadas x e y
+     * Dois objetos da classe Ponto são considerados iguais se as suas coordenadas x e y
      * diferem por valores menores que um limite estabelecido (eps).
      *
      * @param o O objeto a ser comparado com o objeto atual.
@@ -89,7 +89,7 @@ public class Ponto {
      * A representação segue o formato "(x, y)", onde x e y são as coordenadas do ponto
      * arredondadas para duas casas decimais.
      *
-     * @return uma string representando o ponto no formato "(x, y)".
+     * @return uma ‘string’ representando o ponto no formato "(x, y)".
      */
     @Override
     public String toString() {

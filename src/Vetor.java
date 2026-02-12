@@ -103,6 +103,7 @@ public class Vetor {
      *          com o vetor atual.
      * @return O ponto de interseção entre o vetor atual e o segmento de reta fornecido,
      * ou {@code null} se não houver interseção.
+     * @see SegmentoReta#intersect(Vetor)
      */
     public Ponto intersect(SegmentoReta v) {
         return v.intersect(this);
